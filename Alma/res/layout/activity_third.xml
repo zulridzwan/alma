@@ -1,0 +1,99 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- 
+//https://developers.google.com/maps/documentation/android/map
+Using XML Attributes
+
+This section describes how to set the initial state of the map 
+if you have added a map to your application using an XML layout file.
+
+The Maps API defines a set of custom XML attributes for a MapFragment or a MapView that you can use to 
+configure the initial state of the map directly from the layout file. The following attributes are currently defined:
+
+mapType. This allows you to specify the type of map to display. 
+         Valid values include: none, normal, hybrid, satellite and terrain.
+cameraTargetLat, cameraTargetLng, cameraZoom, cameraBearing, cameraTilt. 
+         These allow you to specify the initial camera position. 
+uiZoomControls, uiCompass. These allow you to specify whether you want the zoom controls and compass to appear on the map. 
+         See UiSettings for more details.
+uiZoomGestures, uiScrollGestures, uiRotateGestures, uiTiltGestures. These allow you to specify 
+         which gestures are enabled/disabled for interaction with the map. See UiSettings for more details.
+zOrderOnTop. Control whether the map view's surface is placed on top of its window. 
+         See SurfaceView.setZOrderOnTop(boolean) for more details. 
+         Note that this will cover all other views that could appear on the map 
+         (e.g., the zoom controls, the my location button).
+useViewLifecycle. Only valid with a MapFragment. This attribute specifies whether the lifecycle of the map 
+         should be tied to the fragment's view or the fragment itself. See here for more details.
+         
+In order to use these custom attributes within your XML layout file, 
+you must first add the following namespace declaration (you can choose any namespace, it doesn't have to be map):
+
+xmlns:map="http://schemas.android.com/apk/res-auto"
+ -->
+
+<!--  <fragment xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/map"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    class="com.google.android.gms.maps.SupportMapFragment" />-->
+<!-- 
+<fragment xmlns:android="http://schemas.android.com/apk/res/android" 
+          xmlns:zulridzwan="http://schemas.android.com/apk/res-auto" 
+          android:id="@+id/map"
+          android:layout_width="match_parent"
+          android:layout_height="match_parent"
+          android:name="com.google.android.gms.maps.MapFragment" 
+          zulridzwan:cameraTargetLat="3.065570" 
+          zulridzwan:cameraTargetLng="101.455997" 
+          zulridzwan:uiCompass="true" 
+          zulridzwan:cameraZoom="13" 
+          zulridzwan:cameraBearing="112.5"/> -->
+<!-- me:if cameraBearing is not set, map view will face north automatically -->
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".ThirdActivity">
+  
+<RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" 
+        android:orientation="horizontal" >
+ 
+        <ImageButton
+            android:id="@+id/btn_find"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/ic_action_search"
+            android:layout_alignParentRight="true" />
+ 
+        <EditText
+            android:id="@+id/et_location"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:inputType="textNoSuggestions" 
+            android:hint="@string/map_search_hint"
+            android:layout_toLeftOf="@id/btn_find" />
+ 
+    </RelativeLayout>
+<!-- Test wrapper layout -->
+<com.zulridzwan.lib.map.MapWrapperLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/map_wrapper_layout"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <fragment
+        android:id="@+id/mapwrapped"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        class="com.google.android.gms.maps.MapFragment" 
+        xmlns:zulridzwan="http://schemas.android.com/apk/res-auto" 
+          zulridzwan:uiCompass="true" 
+        />
+
+</com.zulridzwan.lib.map.MapWrapperLayout>
+</LinearLayout>
+
+	
+

@@ -1,0 +1,186 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent" 
+    android:layout_marginTop="10dp"
+    android:orientation="vertical" >
+
+    
+    <RelativeLayout 
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" 
+        android:layout_marginLeft="10dp">
+    <TextView
+        android:id="@+id/reportername_label"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Reported By: " 
+        android:textSize="12sp" 
+        android:textStyle="bold"/>
+    
+    <TextView
+        android:id="@+id/reportername_val"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" 
+        android:layout_toRightOf="@id/reportername_label"
+        android:text="Zulridzwan" 
+        android:textSize="12sp"/>
+    </RelativeLayout>
+    
+    
+   <RelativeLayout 
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" 
+        android:layout_marginLeft="10dp">
+   <TextView
+        android:id="@+id/email_label"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Email Address: " 
+        android:textSize="12sp"
+        android:textStyle="bold"/>
+
+   <TextView
+        android:id="@+id/email_val"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_toRightOf="@id/email_label"
+        android:text="zulridzwan@gmail.com" 
+        android:textSize="12sp"/>
+   </RelativeLayout>
+
+    <TextView
+        android:id="@+id/details_label"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" 
+        android:layout_marginLeft="10dp" 
+        android:text="Report Details: " 
+        android:textSize="12sp"
+        android:textStyle="bold"/>
+
+    <TextView
+        android:id="@+id/details_val"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" 
+        android:layout_marginLeft="10dp" 
+        android:text="Report Details" 
+        android:textSize="12sp" />
+    
+    <TextView
+        android:id="@+id/asnaf_label"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" 
+        android:layout_marginLeft="10dp" 
+        android:layout_marginTop="12sp"
+        android:text="Asnaf Location: "
+        android:textSize="12sp"
+        android:textStyle="bold" />
+    
+
+           
+   <LinearLayout 
+        android:orientation="horizontal" 
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" 
+        android:layout_marginLeft="10dp">
+        <TextView
+                android:id="@+id/coordinate_label"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Coordinate : "
+                android:textSize="12sp" />
+
+        <TextView
+            android:id="@+id/latitude_val"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Latitude"
+            android:textSize="12sp" />
+
+       <TextView
+                android:id="@+id/comma"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="2sp"
+                android:layout_marginRight="2sp"
+                android:text="," 
+                android:textSize="12sp"/>
+
+       <TextView
+           android:id="@+id/longitude_val"
+           android:layout_width="wrap_content"
+           android:layout_height="wrap_content"
+           android:text="Longitude"
+           android:textSize="12sp" />
+
+    </LinearLayout>
+
+
+
+      
+       <LinearLayout 
+               android:orientation="vertical" 
+               android:layout_width="match_parent"
+               android:layout_height="wrap_content" 
+               android:layout_marginLeft="10dp">     
+            <TextView
+                android:id="@+id/address_label"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Location Address: " 
+                android:textSize="12sp"
+                android:textStyle="bold"/>
+
+            <TextView
+                android:id="@+id/address_val"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Address" 
+                android:ems="12"
+                android:textSize="12sp" />
+
+      </LinearLayout>
+
+
+      
+            
+            
+
+            
+    
+   
+    
+    <ImageView
+        android:id="@+id/asnafpicture"
+        android:layout_width="320dp"
+        android:layout_height="280dp" 
+        android:layout_marginTop="10dp"
+        android:layout_gravity="center"
+        android:scaleType="centerInside"
+        android:src="@drawable/ic_launcher" />
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" 
+        android:gravity="center"
+        android:orientation="horizontal" >
+
+        <Button
+            android:id="@+id/btncancel"
+            android:layout_width="wrap_content"
+            android:layout_height="30dp"
+            android:text="Cancel"
+            android:textSize="12sp" 
+            android:onClick="exitdetail"/>
+
+        <Button
+            android:id="@+id/btnsubmit"
+            android:layout_width="wrap_content"
+            android:layout_height="30dp"
+            android:layout_toRightOf="@id/btncancel"
+            android:text="Mark as Done"
+            android:textSize="12sp" 
+            android:onClick="markdone"/>
+
+   </RelativeLayout>
+
+</LinearLayout>

@@ -1,0 +1,251 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent" 
+    android:layout_marginTop="10dp"
+    android:orientation="vertical" >
+
+    <TextView
+        android:id="@+id/reportername_label"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" 
+        android:layout_marginLeft="10dp" 
+        android:text="Your Name" 
+        android:textSize="12sp"/>
+
+   <EditText
+        android:id="@+id/reportername"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" 
+        android:layout_marginLeft="10dp" 
+        android:ems="12"
+        android:textSize="12sp">
+   </EditText>
+
+   <TextView
+        android:id="@+id/email_label"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" 
+        android:layout_marginLeft="10dp" 
+        android:text="Your Email Address" 
+        android:textSize="12sp"/>
+
+   <EditText
+        android:id="@+id/email"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" 
+        android:layout_marginLeft="10dp" 
+        android:ems="12"
+        android:textSize="12sp" />
+
+    <TextView
+        android:id="@+id/details_label"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" 
+        android:layout_marginLeft="10dp" 
+        android:text="Report Details" 
+        android:textSize="12sp"/>
+
+    <EditText
+        android:id="@+id/details"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" 
+        android:layout_marginLeft="10dp"
+        android:ems="12"
+        android:inputType="textMultiLine"
+        android:textSize="12sp" />
+    
+    <TextView
+        android:id="@+id/asnaf_label"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" 
+        android:layout_marginLeft="10dp"
+        android:layout_marginTop="12sp"
+        android:text="Asnaf Location"
+        android:textSize="12sp" />
+    
+
+           
+   <LinearLayout 
+        android:orientation="horizontal" 
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" 
+        android:layout_marginLeft="10dp">
+        <TextView
+                android:id="@+id/coordinate_label"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Coordinate : "
+                android:textSize="12sp" />
+
+        <TextView
+            android:id="@+id/latitude"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Latitude"
+            android:textSize="12sp" />
+
+       <TextView
+                android:id="@+id/comma"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="2sp"
+                android:layout_marginRight="2sp"
+                android:text="," 
+                android:textSize="12sp"/>
+
+       <TextView
+           android:id="@+id/longitude"
+           android:layout_width="wrap_content"
+           android:layout_height="wrap_content"
+           android:text="Longitude"
+           android:textSize="12sp" />
+
+    </LinearLayout>
+
+
+
+      
+       <LinearLayout 
+               android:orientation="horizontal" 
+               android:layout_width="match_parent"
+               android:layout_height="wrap_content" 
+               android:layout_marginLeft="10dp">     
+            <TextView
+                android:id="@+id/address_label"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Address : " 
+                android:textSize="12sp"/>
+
+            <EditText
+                android:id="@+id/address"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:ems="12"
+                android:inputType="textMultiLine"
+                android:textSize="12sp" />
+
+      </LinearLayout>
+
+
+      
+            <LinearLayout 
+               android:orientation="horizontal" 
+               android:layout_width="match_parent"
+               android:layout_height="wrap_content" 
+               android:layout_marginLeft="10dp">
+            <TextView
+            android:id="@+id/town_label"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Town : " 
+            android:textSize="12sp"/>
+            
+            <EditText
+                android:id="@+id/town"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:ems="12"
+                android:textSize="12sp" />
+
+            </LinearLayout>
+
+            <LinearLayout 
+               android:orientation="horizontal" 
+               android:layout_width="match_parent"
+               android:layout_height="wrap_content" 
+               android:layout_marginLeft="10dp">
+            <TextView
+             android:id="@+id/district_label"
+             android:layout_width="wrap_content"
+             android:layout_height="wrap_content"
+             android:text="District : " 
+             android:textSize="12sp"/>
+
+             <EditText
+                 android:id="@+id/district"
+                 android:layout_width="wrap_content"
+                 android:layout_height="wrap_content"
+                 android:ems="12"
+                 android:textSize="12sp" 
+                 android:layout_weight="1"/>
+             
+             <TextView
+                    android:id="@+id/state_label"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="State : "
+                    android:textSize="12sp" />
+
+                <EditText
+                    android:id="@+id/state"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:ems="12"
+                    android:textSize="12sp" 
+                    android:layout_weight="1" />
+
+       </LinearLayout>
+            
+
+            
+    
+    <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal" 
+                android:layout_marginLeft="10dp">
+
+    <TextView
+        android:id="@+id/asnafpicture_label"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Picture : "
+        android:textSize="12sp" />
+
+    <Button
+        android:id="@+id/btnimage"
+        android:layout_width="wrap_content"
+        android:layout_height="30dp"
+        android:text="Select Picture"
+        android:textSize="12sp" />
+    <TextView
+        android:id="@+id/msgtxt"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="..." 
+        android:textSize="12sp"/>
+
+    </LinearLayout>
+    
+    <ImageView
+        android:id="@+id/asnafpicture"
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:layout_gravity="center"
+        android:src="@drawable/ic_launcher" />
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" 
+        android:gravity="center"
+        android:orientation="horizontal" >
+
+        <Button
+            android:id="@+id/btncancel"
+            android:layout_width="wrap_content"
+            android:layout_height="30dp"
+            android:text="Cancel"
+            android:textSize="12sp" />
+
+        <Button
+            android:id="@+id/btnsubmit"
+            android:layout_width="wrap_content"
+            android:layout_height="30dp"
+            android:layout_toRightOf="@id/btncancel"
+            android:text="Submit"
+            android:textSize="12sp" />
+
+   </RelativeLayout>
+
+</LinearLayout>

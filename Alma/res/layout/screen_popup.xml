@@ -1,0 +1,25 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/border"
+    android:gravity="center_vertical|center_horizontal"
+    tools:context=".ThirdActivity" >
+
+    <Button
+        android:id="@+id/add_text_btn"
+        android:layout_width="150dp"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_centerVertical="true"
+        android:text="@string/report_asnaf" />
+
+    <Button
+        android:id="@+id/del_text_btn"
+        android:layout_width="150dp"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/add_text_btn"
+        android:layout_below="@+id/add_text_btn"
+        android:text="@string/close_popup" />
+
+</RelativeLayout> 

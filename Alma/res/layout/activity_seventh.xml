@@ -1,0 +1,1631 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#FFFFFF"
+    android:orientation="vertical"
+     >
+
+<ScrollView 
+    android:id="@+id/scrollView1"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content" >
+    <LinearLayout 
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical" >
+        
+<!-- Accordion Panel -->        
+        <TextView 
+            android:id="@+id/layouttext1"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" 
+            android:text="@string/hq"
+            android:textColor="#000000" 
+            android:background="@drawable/border2"
+            android:textSize="20sp" />
+<!-- Accordion Items -->
+        
+        <LinearLayout 
+            android:id="@+id/layout1"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" 
+            android:background="@drawable/border3"
+            android:orientation="vertical" >
+            
+            <TextView 
+                android:id="@+id/layout1line1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="#3366FF" 
+                android:textStyle="bold"
+                android:text="@string/hq_title" 
+                android:textSize="12sp"/> 
+            
+            <TextView 
+                android:id="@+id/layout1line2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="#000000" 
+                android:text="@string/hq_address" 
+                android:textSize="12sp"/>
+            
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" >
+
+                <LinearLayout
+                    android:id="@+id/contact1"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical" >
+
+                    <TextView
+                        android:id="@+id/layout1line3"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="10dp"
+                        android:text="@string/contact_info"
+                        android:textColor="#3366FF"
+                        android:textSize="12sp"
+                        android:textStyle="bold" />
+
+                    <TextView
+                        android:id="@+id/layout1line4"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="@string/hq_contacts"
+                        android:textColor="#000000"
+                        android:textSize="12sp" />
+                </LinearLayout>
+
+                <Button
+                    android:id="@+id/mapbtn1"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentBottom="true"
+                    android:layout_alignParentRight="true"
+                    android:text="@string/view_map"
+                    android:textSize="12sp" 
+                    android:onClick="showmap"/>
+            </RelativeLayout>
+
+        </LinearLayout>
+
+<!-- Accordion Panel -->
+        <TextView 
+            android:id="@+id/layouttext2"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" 
+            android:text="@string/district1"
+            android:textColor="#000000" 
+            android:background="@drawable/border2"
+            android:textSize="20sp" />
+<!-- Accordion Items -->
+        
+        <LinearLayout 
+            android:id="@+id/layout2"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" 
+            android:background="@drawable/border3"
+            android:orientation="vertical" >
+            
+            <TextView 
+                android:id="@+id/layout2line1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="#3366FF" 
+                android:textStyle="bold"
+                android:text="@string/branch1_title" 
+                android:textSize="12sp"/> 
+            
+            <TextView 
+                android:id="@+id/layout2line2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="#000000" 
+                android:text="@string/branch1_address" 
+                android:textSize="12sp"/>
+            
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" >
+
+                <LinearLayout
+                    android:id="@+id/contact2"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical" >
+                    
+                    <TextView 
+                        android:id="@+id/layout2line3" 
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content" 
+                        android:layout_marginTop="10dp"
+                        android:textColor="#3366FF" 
+                        android:textStyle="bold" 
+                        android:text="@string/contact_info" 
+                        android:textSize="12sp"/>
+                    
+                    <TextView 
+                        android:id="@+id/layout2line4" 
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:textColor="#000000" 
+                        android:text="@string/branch1_contacts" 
+                        android:textSize="12sp"/>
+                </LinearLayout>
+                
+                <Button
+                    android:id="@+id/mapbtn2"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentBottom="true"
+                    android:layout_alignParentRight="true"
+                    android:text="@string/view_map"
+                    android:textSize="12sp" 
+                    android:onClick="showmap"/>
+            </RelativeLayout>
+            
+            <TextView 
+                android:id="@+id/layout2line5"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:textColor="#3366FF" 
+                android:textStyle="bold"
+                android:text="@string/branch2_title" 
+                android:textSize="12sp"/>
+            
+            <TextView 
+                android:id="@+id/layout2line6"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="#000000" 
+                android:text="@string/branch2_address" 
+                android:textSize="12sp"/>
+            
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" >
+
+                <LinearLayout
+                    android:id="@+id/contact3"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical" >
+                    
+                    <TextView 
+                        android:id="@+id/layout2line7"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content" 
+                        android:layout_marginTop="10dp"
+                        android:textColor="#3366FF"  
+                        android:text="@string/contact_info" 
+                        android:textStyle="bold" 
+                        android:textSize="12sp"/>
+                    
+                    <TextView 
+                        android:id="@+id/layout2line8"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:textColor="#000000" 
+                        android:text="@string/branch2_contacts" 
+                        android:textSize="12sp"/>
+                </LinearLayout>
+                <Button
+                    android:id="@+id/mapbtn3"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentBottom="true"
+                    android:layout_alignParentRight="true"
+                    android:text="@string/view_map"
+                    android:textSize="12sp" 
+                    android:onClick="showmap"/>
+            </RelativeLayout>
+            
+            <TextView 
+                android:id="@+id/layout2line9"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" 
+                android:layout_marginTop="10dp"
+                android:textColor="#3366FF"  
+                android:text="@string/branch3_title" 
+                android:textStyle="bold" 
+                android:textSize="12sp"/>
+            
+            <TextView 
+                android:id="@+id/layout2line10"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="#000000" 
+                android:text="@string/branch3_address" 
+                android:textSize="12sp"/>
+            
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" >
+
+                <LinearLayout
+                    android:id="@+id/contact4"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical" >
+                    
+                    <TextView 
+                        android:id="@+id/layout2line11"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content" 
+                        android:layout_marginTop="10dp"
+                        android:textColor="#3366FF"  
+                        android:text="@string/contact_info" 
+                        android:textStyle="bold" 
+                        android:textSize="12sp"/>
+                    
+                    <TextView 
+                        android:id="@+id/layout2line12"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:textColor="#000000" 
+                        android:text="@string/branch3_contacts" 
+                        android:textSize="12sp"/>
+                </LinearLayout>
+                <Button
+                    android:id="@+id/mapbtn4"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentBottom="true"
+                    android:layout_alignParentRight="true"
+                    android:text="@string/view_map"
+                    android:textSize="12sp" 
+                    android:onClick="showmap"/>
+            </RelativeLayout>
+            
+            <TextView 
+                android:id="@+id/layout2line13"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" 
+                android:layout_marginTop="10dp"
+                android:textColor="#3366FF"  
+                android:text="@string/branch4_title" 
+                android:textStyle="bold" 
+                android:textSize="12sp"/>
+            
+            <TextView 
+                android:id="@+id/layout2line14"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="#000000" 
+                android:text="@string/branch4_address" 
+                android:textSize="12sp"/>
+            
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" >
+
+                <LinearLayout
+                    android:id="@+id/contact5"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical" >
+            
+            
+                <TextView 
+                    android:id="@+id/layout2line15"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content" 
+                    android:layout_marginTop="10dp"
+                    android:textColor="#3366FF"  
+                    android:text="@string/contact_info" 
+                    android:textStyle="bold" 
+                    android:textSize="12sp"/>
+            
+                <TextView 
+                    android:id="@+id/layout2line16"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textColor="#000000" 
+                    android:text="@string/branch4_contacts" 
+                    android:textSize="12sp"/>
+                </LinearLayout>
+                
+                <Button
+                    android:id="@+id/mapbtn5"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentBottom="true"
+                    android:layout_alignParentRight="true"
+                    android:text="@string/view_map"
+                    android:textSize="12sp" 
+                    android:onClick="showmap"/>
+            </RelativeLayout>
+        </LinearLayout>
+        
+<!-- Accordion Panel -->        
+        <TextView 
+            android:id="@+id/layouttext3"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" 
+            android:text="@string/district2"
+            android:textColor="#000000" 
+            android:background="@drawable/border2"
+            android:textSize="20sp" />
+<!-- Accordion Items -->
+
+        <LinearLayout 
+            android:id="@+id/layout3"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" 
+            android:background="@drawable/border3"
+            android:orientation="vertical" >
+            
+            <TextView 
+                android:id="@+id/layout3line1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="#3366FF" 
+                android:textStyle="bold"
+                android:text="@string/branch5_title" 
+                android:textSize="12sp"/> 
+            
+            <TextView 
+                android:id="@+id/layout3line2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="#000000" 
+                android:text="@string/branch5_address" 
+                android:textSize="12sp"/>
+            
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" >
+
+                <LinearLayout
+                    android:id="@+id/contact6"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical" >
+            
+                <TextView 
+                    android:id="@+id/layout3line3"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="10dp"
+                    android:textColor="#3366FF" 
+                    android:textStyle="bold"
+                    android:text="@string/contact_info" 
+                    android:textSize="12sp"/>
+
+                <TextView 
+                    android:id="@+id/layout3line4"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                	android:textColor="#000000" 
+                	android:text="@string/branch5_contacts" 
+                	android:textSize="12sp"/>
+                </LinearLayout>
+                
+                <Button
+                    android:id="@+id/mapbtn6"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentBottom="true"
+                    android:layout_alignParentRight="true"
+                    android:text="@string/view_map"
+                    android:textSize="12sp" 
+                    android:onClick="showmap"/>
+            </RelativeLayout>
+            
+            <TextView 
+                android:id="@+id/layout3line5"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:textColor="#3366FF" 
+                android:textStyle="bold"
+                android:text="@string/branch6_title" 
+                android:textSize="12sp"/>
+
+            <TextView 
+                android:id="@+id/layout3line6"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="#000000" 
+                android:text="@string/branch6_address" 
+                android:textSize="12sp"/>
+            
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" >
+
+                <LinearLayout
+                    android:id="@+id/contact7"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical" >
+            
+            	<TextView 
+                	android:id="@+id/layout3line7"
+                	android:layout_width="wrap_content"
+                	android:layout_height="wrap_content"
+                	android:layout_marginTop="10dp"
+                	android:textColor="#3366FF" 
+                	android:textStyle="bold"
+                	android:text="@string/contact_info" 
+                	android:textSize="12sp"/>
+
+            	<TextView 
+                	android:id="@+id/layout3line8"
+                	android:layout_width="wrap_content"
+                	android:layout_height="wrap_content"
+                	android:textColor="#000000" 
+                	android:text="@string/branch6_contacts" 
+                	android:textSize="12sp"/>
+                </LinearLayout>
+                
+                <Button
+                    android:id="@+id/mapbtn7"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentBottom="true"
+                    android:layout_alignParentRight="true"
+                    android:text="@string/view_map"
+                    android:textSize="12sp" 
+                    android:onClick="showmap"/>
+            </RelativeLayout>
+            
+            <TextView 
+                android:id="@+id/layout3line9"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:textColor="#3366FF" 
+                android:textStyle="bold"
+                android:text="@string/branch7_title" 
+                android:textSize="12sp"/>
+            
+            <TextView 
+                android:id="@+id/layout3line10"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="#000000" 
+                android:text="@string/branch7_address" 
+                android:textSize="12sp"/>
+            
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" >
+
+                <LinearLayout
+                    android:id="@+id/contact8"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical" >
+            
+            	<TextView 
+                	android:id="@+id/layout3line11"
+                	android:layout_width="wrap_content"
+                	android:layout_height="wrap_content"
+                	android:layout_marginTop="10dp"
+                	android:textColor="#3366FF" 
+                	android:textStyle="bold"
+                	android:text="@string/contact_info" 
+                	android:textSize="12sp"/>
+
+            	<TextView 
+                	android:id="@+id/layout3line12"
+                	android:layout_width="wrap_content"
+                	android:layout_height="wrap_content"
+                	android:textColor="#000000" 
+                	android:text="@string/branch7_contacts" 
+                	android:textSize="12sp"/>
+                </LinearLayout>
+                
+                <Button
+                    android:id="@+id/mapbtn8"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentBottom="true"
+                    android:layout_alignParentRight="true"
+                    android:text="@string/view_map"
+                    android:textSize="12sp" 
+                    android:onClick="showmap"/>
+            </RelativeLayout>
+            
+            <TextView 
+                android:id="@+id/layout3line13"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:textColor="#3366FF" 
+                android:textStyle="bold"
+                android:text="@string/branch8_title" 
+                android:textSize="12sp"/>
+
+            <TextView 
+                android:id="@+id/layout3line14"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="#000000" 
+                android:text="@string/branch8_address" 
+                android:textSize="12sp"/>
+            
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" >
+
+                <LinearLayout
+                    android:id="@+id/contact9"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical" >
+            
+            	<TextView 
+                	android:id="@+id/layout3line15"
+                	android:layout_width="wrap_content"
+                	android:layout_height="wrap_content"
+                	android:layout_marginTop="10dp"
+                	android:textColor="#3366FF" 
+                	android:textStyle="bold"
+                	android:text="@string/contact_info" 
+                	android:textSize="12sp"/>
+
+            	<TextView 
+                	android:id="@+id/layout3line16"
+                	android:layout_width="wrap_content"
+                	android:layout_height="wrap_content"
+                	android:textColor="#000000" 
+                	android:text="@string/branch8_contacts" 
+                	android:textSize="12sp"/>
+                </LinearLayout>
+                
+                <Button
+                    android:id="@+id/mapbtn9"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentBottom="true"
+                    android:layout_alignParentRight="true"
+                    android:text="@string/view_map"
+                    android:textSize="12sp" 
+                    android:onClick="showmap"/>
+            </RelativeLayout>
+            
+            
+       </LinearLayout>
+       
+<!-- Accordion Panel -->        
+       <TextView 
+            android:id="@+id/layouttext4"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" 
+            android:text="@string/district3"
+            android:textColor="#000000" 
+            android:background="@drawable/border2"
+            android:textSize="20sp" />
+<!-- Accordion Items -->
+        
+        <LinearLayout 
+            android:id="@+id/layout4"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" 
+            android:background="@drawable/border3"
+            android:orientation="vertical" >
+            
+             <TextView 
+                android:id="@+id/layout4line1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:textColor="#3366FF" 
+                android:textStyle="bold"
+                android:text="@string/branch9_title" 
+                android:textSize="12sp"/>
+             
+             <TextView 
+                android:id="@+id/layout4line2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="#000000" 
+                android:text="@string/branch9_address" 
+                android:textSize="12sp"/>
+             
+             <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" >
+
+                <LinearLayout
+                    android:id="@+id/contact10"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical" >
+             
+             	<TextView 
+                	android:id="@+id/layout4line3"
+                	android:layout_width="wrap_content"
+                	android:layout_height="wrap_content"
+                	android:layout_marginTop="10dp"
+                	android:textColor="#3366FF" 
+                	android:textStyle="bold"
+                	android:text="@string/contact_info" 
+                	android:textSize="12sp"/>
+
+            	<TextView 
+                	android:id="@+id/layout4line4"
+                	android:layout_width="wrap_content"
+                	android:layout_height="wrap_content"
+                	android:textColor="#000000" 
+                	android:text="@string/branch9_contacts" 
+                	android:textSize="12sp"/>
+                </LinearLayout>
+                
+                <Button
+                    android:id="@+id/mapbtn10"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentBottom="true"
+                    android:layout_alignParentRight="true"
+                    android:text="@string/view_map"
+                    android:textSize="12sp" 
+                    android:onClick="showmap"/>
+             </RelativeLayout>
+                
+                
+        </LinearLayout>
+       
+<!-- Accordion Panel -->        
+        <TextView 
+            android:id="@+id/layouttext5"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" 
+            android:text="@string/district4"
+            android:textColor="#000000" 
+            android:background="@drawable/border2"
+            android:textSize="20sp" />
+<!-- Accordion Items -->
+        
+        <LinearLayout 
+            android:id="@+id/layout5"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" 
+            android:background="@drawable/border3"
+            android:orientation="vertical" >
+            
+             <TextView 
+                android:id="@+id/layout5line1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:textColor="#3366FF" 
+                android:textStyle="bold"
+                android:text="@string/branch10_title" 
+                android:textSize="12sp"/>
+             
+             <TextView 
+                android:id="@+id/layout5line2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="#000000" 
+                android:text="@string/branch10_address" 
+                android:textSize="12sp"/>
+             
+             <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" >
+
+                <LinearLayout
+                    android:id="@+id/contact11"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical" >
+             
+             	<TextView 
+                	android:id="@+id/layout5line3"
+                	android:layout_width="wrap_content"
+                	android:layout_height="wrap_content"
+                	android:layout_marginTop="10dp"
+                	android:textColor="#3366FF" 
+                	android:textStyle="bold"
+                	android:text="@string/contact_info" 
+                	android:textSize="12sp"/>
+
+            	<TextView 
+                	android:id="@+id/layout5line4"
+                	android:layout_width="wrap_content"
+                	android:layout_height="wrap_content"
+                	android:textColor="#000000" 
+                	android:text="@string/branch10_contacts" 
+                	android:textSize="12sp"/>
+                </LinearLayout>
+                
+                <Button
+                    android:id="@+id/mapbtn11"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentBottom="true"
+                    android:layout_alignParentRight="true"
+                    android:text="@string/view_map"
+                    android:textSize="12sp" 
+                    android:onClick="showmap"/>
+             </RelativeLayout>
+            
+
+            
+            <TextView 
+                android:id="@+id/layout5line5"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:textColor="#3366FF" 
+                android:textStyle="bold"
+                android:text="@string/branch11_title" 
+                android:textSize="12sp"/>
+
+            <TextView 
+                android:id="@+id/layout5line6"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="#000000" 
+                android:text="@string/branch11_address" 
+                android:textSize="12sp"/>
+            
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" >
+
+                <LinearLayout
+                    android:id="@+id/contact12"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical" >
+            
+            	<TextView 
+                	android:id="@+id/layout5line7"
+                	android:layout_width="wrap_content"
+                	android:layout_height="wrap_content"
+                	android:layout_marginTop="10dp"
+                	android:textColor="#3366FF" 
+                	android:textStyle="bold"
+                	android:text="@string/contact_info" 
+                	android:textSize="12sp"/>
+
+            	<TextView 
+                	android:id="@+id/layout5line8"
+                	android:layout_width="wrap_content"
+                	android:layout_height="wrap_content"
+                	android:textColor="#000000" 
+                	android:text="@string/branch11_contacts" 
+                	android:textSize="12sp"/>
+                </LinearLayout>
+                
+                <Button
+                    android:id="@+id/mapbtn12"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentBottom="true"
+                    android:layout_alignParentRight="true"
+                    android:text="@string/view_map"
+                    android:textSize="12sp" 
+                    android:onClick="showmap"/>
+            </RelativeLayout>
+        </LinearLayout>
+        
+<!-- Accordion Panel -->        
+        <TextView 
+            android:id="@+id/layouttext6"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" 
+            android:text="@string/district5"
+            android:textColor="#000000" 
+            android:background="@drawable/border2"
+            android:textSize="20sp" />
+<!-- Accordion Items -->
+        
+        <LinearLayout 
+            android:id="@+id/layout6"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" 
+            android:background="@drawable/border3"
+            android:orientation="vertical" >
+            
+             <TextView 
+                android:id="@+id/layout6line1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:textColor="#3366FF" 
+                android:textStyle="bold"
+                android:text="@string/branch12_title" 
+                android:textSize="12sp"/>
+             
+             <TextView 
+                android:id="@+id/layout6line2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="#000000" 
+                android:text="@string/branch12_address" 
+                android:textSize="12sp"/>
+             
+             <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" >
+
+                <LinearLayout
+                    android:id="@+id/contact13"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical" >
+             
+             	<TextView 
+                	android:id="@+id/layout6line3"
+                	android:layout_width="wrap_content"
+                	android:layout_height="wrap_content"
+                	android:layout_marginTop="10dp"
+                	android:textColor="#3366FF" 
+                	android:textStyle="bold"
+                	android:text="@string/contact_info" 
+                	android:textSize="12sp"/>
+
+            	<TextView 
+                	android:id="@+id/layout6line4"
+                	android:layout_width="wrap_content"
+                	android:layout_height="wrap_content"
+                	android:textColor="#000000" 
+                	android:text="@string/branch12_contacts" 
+                	android:textSize="12sp"/>
+                </LinearLayout>
+                
+                <Button
+                    android:id="@+id/mapbtn13"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentBottom="true"
+                    android:layout_alignParentRight="true"
+                    android:text="@string/view_map"
+                    android:textSize="12sp" 
+                    android:onClick="showmap"/>
+             </RelativeLayout>
+        </LinearLayout>
+        
+<!-- Accordion Panel -->        
+        <TextView 
+            android:id="@+id/layouttext7"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" 
+            android:text="@string/district6"
+            android:textColor="#000000" 
+            android:background="@drawable/border2"
+            android:textSize="20sp" />
+<!-- Accordion Items -->
+        
+        <LinearLayout 
+            android:id="@+id/layout7"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" 
+            android:background="@drawable/border3"
+            android:orientation="vertical" >
+            
+             <TextView 
+                android:id="@+id/layout7line1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:textColor="#3366FF" 
+                android:textStyle="bold"
+                android:text="@string/branch13_title" 
+                android:textSize="12sp"/>
+             
+             <TextView 
+                android:id="@+id/layout7line2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="#000000" 
+                android:text="@string/branch13_address" 
+                android:textSize="12sp"/>
+             
+             <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" >
+
+                <LinearLayout
+                    android:id="@+id/contact14"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical" >
+             
+	             	<TextView 
+		                android:id="@+id/layout7line3"
+		                android:layout_width="wrap_content"
+		                android:layout_height="wrap_content"
+		                android:layout_marginTop="10dp"
+		                android:textColor="#3366FF" 
+		                android:textStyle="bold"
+		                android:text="@string/contact_info" 
+		                android:textSize="12sp"/>
+	
+	            	<TextView 
+		                android:id="@+id/layout7line4"
+		                android:layout_width="wrap_content"
+		                android:layout_height="wrap_content"
+		                android:textColor="#000000" 
+		                android:text="@string/branch13_contacts" 
+		                android:textSize="12sp"/>
+                </LinearLayout>
+                
+                <Button
+                    android:id="@+id/mapbtn14"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentBottom="true"
+                    android:layout_alignParentRight="true"
+                    android:text="@string/view_map"
+                    android:textSize="12sp" 
+                    android:onClick="showmap"/>
+             </RelativeLayout>
+            
+            <TextView 
+                android:id="@+id/layout7line8"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:textColor="#3366FF" 
+                android:textStyle="bold"
+                android:text="@string/branch14_title" 
+                android:textSize="12sp"/>
+
+            <TextView 
+                android:id="@+id/layout7line9"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="#000000" 
+                android:text="@string/branch14_address" 
+                android:textSize="12sp"/>
+            
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" >
+
+                <LinearLayout
+                    android:id="@+id/contact15"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical" >
+
+            
+            	<TextView 
+	                android:id="@+id/layout7line13"
+	                android:layout_width="wrap_content"
+	                android:layout_height="wrap_content"
+	                android:layout_marginTop="10dp"
+	                android:textColor="#3366FF" 
+	                android:textStyle="bold"
+	                android:text="@string/contact_info" 
+	                android:textSize="12sp"/>
+
+            	<TextView 
+	                android:id="@+id/layout7line14"
+	                android:layout_width="wrap_content"
+	                android:layout_height="wrap_content"
+	                android:textColor="#000000" 
+	                android:text="@string/branch14_contacts" 
+	                android:textSize="12sp"/>
+                </LinearLayout>
+                
+                <Button
+                    android:id="@+id/mapbtn15"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentBottom="true"
+                    android:layout_alignParentRight="true"
+                    android:text="@string/view_map"
+                    android:textSize="12sp" 
+                    android:onClick="showmap"/>
+            </RelativeLayout>
+        </LinearLayout>
+        
+<!-- Accordion Panel -->        
+        <TextView 
+            android:id="@+id/layouttext8"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" 
+            android:text="@string/district7"
+            android:textColor="#000000" 
+            android:background="@drawable/border2"
+            android:textSize="20sp" />
+<!-- Accordion Items -->
+        
+        <LinearLayout 
+            android:id="@+id/layout8"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" 
+            android:background="@drawable/border3"
+            android:orientation="vertical" >
+            
+             <TextView 
+                android:id="@+id/layout8line1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:textColor="#3366FF" 
+                android:textStyle="bold"
+                android:text="@string/branch15_title" 
+                android:textSize="12sp"/>
+             
+             <TextView 
+                android:id="@+id/layout8line2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="#000000" 
+                android:text="@string/branch15_address" 
+                android:textSize="12sp"/>
+             
+             <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" >
+
+                <LinearLayout
+                    android:id="@+id/contact16"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical" >
+             
+             	<TextView 
+	                android:id="@+id/layout8line3"
+	                android:layout_width="wrap_content"
+	                android:layout_height="wrap_content"
+	                android:layout_marginTop="10dp"
+	                android:textColor="#3366FF" 
+	                android:textStyle="bold"
+	                android:text="@string/contact_info" 
+	                android:textSize="12sp"/>
+
+            	<TextView 
+	                android:id="@+id/layout8line4"
+	                android:layout_width="wrap_content"
+	                android:layout_height="wrap_content"
+	                android:textColor="#000000" 
+	                android:text="@string/branch15_contacts" 
+	                android:textSize="12sp"/>
+                </LinearLayout>
+                
+                <Button
+                    android:id="@+id/mapbtn16"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentBottom="true"
+                    android:layout_alignParentRight="true"
+                    android:text="@string/view_map"
+                    android:textSize="12sp" 
+                    android:onClick="showmap"/>
+             </RelativeLayout>
+            
+            <TextView 
+                android:id="@+id/layout8line5"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:textColor="#3366FF" 
+                android:textStyle="bold"
+                android:text="@string/branch16_title" 
+                android:textSize="12sp"/>
+
+            <TextView 
+                android:id="@+id/layout8line6"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="#000000" 
+                android:text="@string/branch16_address" 
+                android:textSize="12sp"/>
+            
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" >
+
+                <LinearLayout
+                    android:id="@+id/contact17"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical" >
+            
+            	<TextView 
+	                android:id="@+id/layout8line7"
+	                android:layout_width="wrap_content"
+	                android:layout_height="wrap_content"
+	                android:layout_marginTop="10dp"
+	                android:textColor="#3366FF" 
+	                android:textStyle="bold"
+	                android:text="@string/contact_info" 
+	                android:textSize="12sp"/>
+
+            	<TextView 
+	                android:id="@+id/layout8line8"
+	                android:layout_width="wrap_content"
+	                android:layout_height="wrap_content"
+	                android:textColor="#000000" 
+	                android:text="@string/branch16_contacts" 
+	                android:textSize="12sp"/>
+                </LinearLayout>
+                
+                <Button
+                    android:id="@+id/mapbtn17"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentBottom="true"
+                    android:layout_alignParentRight="true"
+                    android:text="@string/view_map"
+                    android:textSize="12sp" 
+                    android:onClick="showmap"/>
+            </RelativeLayout>
+            
+            <TextView 
+                android:id="@+id/layout8line9"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:textColor="#3366FF" 
+                android:textStyle="bold"
+                android:text="@string/branch17_title" 
+                android:textSize="12sp"/>
+
+            <TextView 
+                android:id="@+id/layout8line10"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="#000000" 
+                android:text="@string/branch17_address" 
+                android:textSize="12sp"/>
+            
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" >
+
+                <LinearLayout
+                    android:id="@+id/contact18"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical" >
+            
+            	<TextView 
+	                android:id="@+id/layout8line11"
+	                android:layout_width="wrap_content"
+	                android:layout_height="wrap_content"
+	                android:layout_marginTop="10dp"
+	                android:textColor="#3366FF" 
+	                android:textStyle="bold"
+	                android:text="@string/contact_info" 
+	                android:textSize="12sp"/>
+
+            	<TextView 
+	                android:id="@+id/layout8line12"
+	                android:layout_width="wrap_content"
+	                android:layout_height="wrap_content"
+	                android:textColor="#000000" 
+	                android:text="@string/branch17_contacts" 
+	                android:textSize="12sp"/>
+                </LinearLayout>
+                
+                <Button
+                    android:id="@+id/mapbtn18"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentBottom="true"
+                    android:layout_alignParentRight="true"
+                    android:text="@string/view_map"
+                    android:textSize="12sp" 
+                    android:onClick="showmap"/>
+            </RelativeLayout>
+            
+            <TextView 
+                android:id="@+id/layout8line13"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:textColor="#3366FF" 
+                android:textStyle="bold"
+                android:text="@string/branch18_title" 
+                android:textSize="12sp"/>
+
+            <TextView 
+                android:id="@+id/layout8line14"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="#000000" 
+                android:text="@string/branch18_address" 
+                android:textSize="12sp"/>
+            
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" >
+
+                <LinearLayout
+                    android:id="@+id/contact19"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical" >
+            
+            	<TextView 
+	                android:id="@+id/layout8line15"
+	                android:layout_width="wrap_content"
+	                android:layout_height="wrap_content"
+	                android:layout_marginTop="10dp"
+	                android:textColor="#3366FF" 
+	                android:textStyle="bold"
+	                android:text="@string/contact_info" 
+	                android:textSize="12sp"/>
+
+            	<TextView 
+	                android:id="@+id/layout8line16"
+	                android:layout_width="wrap_content"
+	                android:layout_height="wrap_content"
+	                android:textColor="#000000" 
+	                android:text="@string/branch18_contacts" 
+	                android:textSize="12sp"/>
+                </LinearLayout>
+                
+                <Button
+                    android:id="@+id/mapbtn19"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentBottom="true"
+                    android:layout_alignParentRight="true"
+                    android:text="@string/view_map"
+                    android:textSize="12sp" 
+                    android:onClick="showmap"/>
+            </RelativeLayout>
+            
+
+            
+            <TextView 
+                android:id="@+id/layout8line17"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:textColor="#3366FF" 
+                android:textStyle="bold"
+                android:text="@string/branch19_title" 
+                android:textSize="12sp"/>
+
+            <TextView 
+                android:id="@+id/layout8line18"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="#000000" 
+                android:text="@string/branch19_address" 
+                android:textSize="12sp"/>
+            
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" >
+
+                <LinearLayout
+                    android:id="@+id/contact20"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical" >
+            
+            	<TextView 
+	                android:id="@+id/layout8line19"
+	                android:layout_width="wrap_content"
+	                android:layout_height="wrap_content"
+	                android:layout_marginTop="10dp"
+	                android:textColor="#3366FF" 
+	                android:textStyle="bold"
+	                android:text="@string/contact_info" 
+	                android:textSize="12sp"/>
+
+            	<TextView 
+	                android:id="@+id/layout8line20"
+	                android:layout_width="wrap_content"
+	                android:layout_height="wrap_content"
+	                android:textColor="#000000" 
+	                android:text="@string/branch19_contacts" 
+	                android:textSize="12sp"/>
+                </LinearLayout>
+                
+                <Button
+                    android:id="@+id/mapbtn20"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentBottom="true"
+                    android:layout_alignParentRight="true"
+                    android:text="@string/view_map"
+                    android:textSize="12sp" 
+                    android:onClick="showmap"/>
+            </RelativeLayout>
+            
+            <TextView 
+                android:id="@+id/layout8line21"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:textColor="#3366FF" 
+                android:textStyle="bold"
+                android:text="@string/branch20_title" 
+                android:textSize="12sp"/>
+
+            <TextView 
+                android:id="@+id/layout8line22"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="#000000" 
+                android:text="@string/branch20_address" 
+                android:textSize="12sp"/>
+            
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" >
+
+                <LinearLayout
+                    android:id="@+id/contact21"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical" >
+            
+            	<TextView 
+	                android:id="@+id/layout8line23"
+	                android:layout_width="wrap_content"
+	                android:layout_height="wrap_content"
+	                android:layout_marginTop="10dp"
+	                android:textColor="#3366FF" 
+	                android:textStyle="bold"
+	                android:text="@string/contact_info" 
+	                android:textSize="12sp"/>
+
+            	<TextView 
+	                android:id="@+id/layout8line24"
+	                android:layout_width="wrap_content"
+	                android:layout_height="wrap_content"
+	                android:textColor="#000000" 
+	                android:text="@string/branch20_contacts" 
+	                android:textSize="12sp"/>
+                </LinearLayout>
+                
+                <Button
+                    android:id="@+id/mapbtn21"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentBottom="true"
+                    android:layout_alignParentRight="true"
+                    android:text="@string/view_map"
+                    android:textSize="12sp" 
+                    android:onClick="showmap"/>
+            </RelativeLayout>
+            
+            <TextView 
+                android:id="@+id/layout8line25"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:textColor="#3366FF" 
+                android:textStyle="bold"
+                android:text="@string/branch21_title" 
+                android:textSize="12sp"/>
+
+            <TextView 
+                android:id="@+id/layout8line26"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="#000000" 
+                android:text="@string/branch21_address" 
+                android:textSize="12sp"/>
+            
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" >
+
+                <LinearLayout
+                    android:id="@+id/contact22"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical" >
+            
+            	<TextView 
+	                android:id="@+id/layout8line27"
+	                android:layout_width="wrap_content"
+	                android:layout_height="wrap_content"
+	                android:layout_marginTop="10dp"
+	                android:textColor="#3366FF" 
+	                android:textStyle="bold"
+	                android:text="@string/contact_info" 
+	                android:textSize="12sp"/>
+
+            	<TextView 
+	                android:id="@+id/layout8line28"
+	                android:layout_width="wrap_content"
+	                android:layout_height="wrap_content"
+	                android:textColor="#000000" 
+	                android:text="@string/branch21_contacts" 
+	                android:textSize="12sp"/>
+                </LinearLayout>
+                
+                <Button
+                    android:id="@+id/mapbtn22"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentBottom="true"
+                    android:layout_alignParentRight="true"
+                    android:text="@string/view_map"
+                    android:textSize="12sp" 
+                    android:onClick="showmap"/>
+            </RelativeLayout>
+        </LinearLayout>
+        
+<!-- Accordion Panel -->        
+        <TextView 
+            android:id="@+id/layouttext9"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" 
+            android:text="@string/district8"
+            android:textColor="#000000" 
+            android:background="@drawable/border2"
+            android:textSize="20sp" />
+<!-- Accordion Items -->
+        
+        <LinearLayout 
+            android:id="@+id/layout9"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" 
+            android:background="@drawable/border3"
+            android:orientation="vertical" >
+            
+             <TextView 
+                android:id="@+id/layout9line1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:textColor="#3366FF" 
+                android:textStyle="bold"
+                android:text="@string/branch22_title" 
+                android:textSize="12sp"/>
+             
+             <TextView 
+                android:id="@+id/layout9line2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="#000000" 
+                android:text="@string/branch22_address" 
+                android:textSize="12sp"/>
+             
+             <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" >
+
+                <LinearLayout
+                    android:id="@+id/contact23"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical" >
+             
+             	<TextView 
+	                android:id="@+id/layout9line3"
+	                android:layout_width="wrap_content"
+	                android:layout_height="wrap_content"
+	                android:layout_marginTop="10dp"
+	                android:textColor="#3366FF" 
+	                android:textStyle="bold"
+	                android:text="@string/contact_info" 
+	                android:textSize="12sp"/>
+
+            	<TextView 
+	                android:id="@+id/layout9line4"
+	                android:layout_width="wrap_content"
+	                android:layout_height="wrap_content"
+	                android:textColor="#000000" 
+	                android:text="@string/branch22_contacts" 
+	                android:textSize="12sp"/>
+                </LinearLayout>
+                
+                <Button
+                    android:id="@+id/mapbtn23"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentBottom="true"
+                    android:layout_alignParentRight="true"
+                    android:text="@string/view_map"
+                    android:textSize="12sp" 
+                    android:onClick="showmap"/>
+             </RelativeLayout>
+        </LinearLayout>
+        
+<!-- Accordion Panel -->        
+        <TextView 
+            android:id="@+id/layouttext10"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" 
+            android:text="@string/district9"
+            android:textColor="#000000" 
+            android:background="@drawable/border2"
+            android:textSize="20sp" />
+<!-- Accordion Items -->
+        
+        <LinearLayout 
+            android:id="@+id/layout10"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" 
+            android:background="@drawable/border3"
+            android:orientation="vertical" >
+            
+             <TextView 
+                android:id="@+id/layout10line1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:textColor="#3366FF" 
+                android:textStyle="bold"
+                android:text="@string/branch23_title" 
+                android:textSize="12sp"/>
+             
+             <TextView 
+                android:id="@+id/layout10line2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="#000000" 
+                android:text="@string/branch23_address" 
+                android:textSize="12sp"/>
+             
+             <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" >
+
+                <LinearLayout
+                    android:id="@+id/contact24"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical" >
+             
+             	<TextView 
+	                android:id="@+id/layout10line3"
+	                android:layout_width="wrap_content"
+	                android:layout_height="wrap_content"
+	                android:layout_marginTop="10dp"
+	                android:textColor="#3366FF" 
+	                android:textStyle="bold"
+	                android:text="@string/contact_info" 
+	                android:textSize="12sp"/>
+
+            	<TextView 
+	                android:id="@+id/layout10line4"
+	                android:layout_width="wrap_content"
+	                android:layout_height="wrap_content"
+	                android:textColor="#000000" 
+	                android:text="@string/branch23_contacts" 
+	                android:textSize="12sp"/>
+                </LinearLayout>
+                
+                <Button
+                    android:id="@+id/mapbtn24"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentBottom="true"
+                    android:layout_alignParentRight="true"
+                    android:text="@string/view_map"
+                    android:textSize="12sp" 
+                    android:onClick="showmap"/>
+             </RelativeLayout>
+        </LinearLayout>
+        
+
+
+
+
+
+            
+
+            
+
+           
+
+
+   
+
+
+
+            
+
+            
+
+       
+
+        </LinearLayout>
+    </ScrollView>
+
+</LinearLayout>

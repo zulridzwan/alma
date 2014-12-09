@@ -79,6 +79,7 @@ public class MainActivity extends Activity {
 	}*/
 	
 	public void login(View view){
+	  sharedpreferences=getSharedPreferences(MyPREFERENCES, Context.MODE_PRIVATE);
 	  Editor editor = sharedpreferences.edit();
 	  String u = username.getText().toString();
 	  String p = password.getText().toString();

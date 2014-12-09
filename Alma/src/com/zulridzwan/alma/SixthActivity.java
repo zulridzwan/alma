@@ -309,6 +309,11 @@ public class SixthActivity extends Activity {
             	Intent returnintent = new Intent();
             	if(serverResponseCode == 200){
         		  setResult(RESULT_OK, returnintent);
+        		  runOnUiThread(new Runnable() {
+		                public void run() {
+		                	Toast.makeText(activity, "Record updated successfully", Toast.LENGTH_SHORT).show();
+		                }
+				 });
         	    } else {
         	      setResult(RESULT_CANCELED, returnintent);  
         	    }

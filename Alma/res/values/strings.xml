@@ -3,10 +3,10 @@
 
     <string name="app_name">Alma</string>
     <string name="apikey">AIzaSyByx8frF-GxPzwKFk4tEhK6LRXhI3fdR58</string>
-    <string name="insert_url">http://10.2.4.150/asnaflocator/insert_report.php</string>
-    <string name="read_url">http://10.2.4.150/asnaflocator/read_report.php</string>
-    <string name="update_url">http://10.2.4.150/asnaflocator/update_report.php</string>
-    <string name="web_root">http://10.2.4.150/asnaflocator/</string>
+    <string name="insert_url">http://192.168.1.11/asnaflocator/insert_report.php</string>
+    <string name="read_url">http://192.168.1.11/asnaflocator/read_report.php</string>
+    <string name="update_url">http://192.168.1.11/asnaflocator/update_report.php</string>
+    <string name="web_root">http://192.168.1.11/asnaflocator/</string>
     <string name="mapdata">mapdata</string>
     <string name="device_position">3.065570,101.455997</string>
     <string name="default_position">3.2301164536717533,101.47247616201639</string>
